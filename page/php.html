@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang=zh-CN>
+
+<head>
+	<title>PHP开发导航-ZDZN</title>
+	<meta charset=utf-8>
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta content="width=device-width,initial-scale=1,maximum-scale=1">
+	<meta name="baidu-site-verification" content="2nmFOW0dW1" />
+	<meta name="keywords" content="php,phpcms,php开发,php开发框架,php常用库,phpstorm,phpstudy,php date,Laravel,CodeIgniter,Zend,PHP文档" />
+	<meta name="description"
+		content="PHP开发导航,phpcms,phpstorm,phpstudy,php date,php框架,php开源框架"/>
+	<meta content=jsthon name=author>
+	<link rel="ZDZN icon" type="image/x-icon" href="../assets/img/logo.ico" />
+	<link href="../assets/css/index.css" rel=stylesheet>
+	<script type="text/javascript" src="../assets/scripts/jquery.min.js"></script>
+	<script type="text/javascript" src="../assets/scripts/baidu.js"></script>
+</head>
+
+<body>
+	<div class="head">
+		<div class="head-layout">
+			<img class="logo" src="../assets/img/logo.png" onclick="javascript:location.href='../index.html'" />
+			<div class="tab">
+				<div class="tab-item2"><a target="_blank" href="../index.html">首页</a></div>
+				<div class="tab-item2"><a target="_blank" href="blog.html">博客集</a></div>
+			</div>
+		</div>
+	</div>
+	<div class="search-group">
+		<div class="search-layout">
+			<div class="search-container">
+				<div class="search-tab" id='search-tab'>
+					<span id='baidu'>百度</span>
+					<span id='google'>Google</span>
+					<span id='github'>GitHub</span>
+					<span id='overflow'>StackOverflow</span>
+					<span id='npm'>NPM</span>
+				</div>
+				<div class="search-box"></div>
+				<form class="search-form" id='search-form' target="_blank" action="https://www.baidu.com/s">
+					<input class="search-keyword" id='search-keyword' type=search autocomplete=off autofocus
+						placeholder="百度一下，你就知道" name='word'>
+					<input class="submit" type=submit value="">
+				</form>
+				<div id="dropdown">
+					<ul></ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="container">
+		<div class="common">
+			<div class="common-row">
+				<div class="common-item">
+					<div><img src="../assets/img/ic-github.png" /></div>
+					<a target="_blank" href="https://github.com/">GitHub</a>
+				</div>
+				<div class="common-item">
+					<div><img src="../assets/img/ic-gitlab.png" /></div>
+					<a target="_blank" href="https://gitlab.com/">GitLab</a>
+				</div>
+				<div class="common-item">
+					<div><img src="../assets/img/ic-gitee.png" /></div>
+					<a target="_blank" href="https://gitee.com/">Gitee</a>
+				</div>
+				<div class="common-item">
+					<div><img src="../assets/img/ic-bitbucket.png" /></div>
+					<a target="_blank" href="https://bitbucket.org/product">Bitbucket.org</a>
+				</div>
+				<div class="common-item">
+					<div><img src="../assets/img/ic-stackoverflow.png" /></div>
+					<a target="_blank" href="https://stackoverflow.com/">StackOverflow</a>
+				</div>
+				<div class="common-item">
+					<div><img src="../assets/img/ic-google.png" /></div>
+					<a target="_blank" href="https://www.google.com/search">Google</a>
+				</div>
+				<div class="common-item">
+					<div><img src="../assets/img/ic-baidu.png" /></div>
+					<a target="_blank" href="https://www.baidu.com/s">百度</a>
+				</div>
+			</div>
+			<div class="common-row">
+				<div class="common-item">
+					<div><img src="../assets/img/ic-leetcode.png" /></div>
+					<a target="_blank" href="https://leetcode-cn.com/">LeetCode</a>
+				</div>
+				<div class="common-item">
+					<div><img src="../assets/img/ic-v2ex.png" /></div>
+					<a target="_blank" href="https://www.v2ex.com/">V2EX</a>
+				</div>
+				<div class="common-item">
+					<div><img src="../assets/img/ic-segmentfault.png" /></div>
+					<a target="_blank" href="https://segmentfault.com/">SegmentFault</a>
+				</div>
+				<div class="common-item">
+					<div><img src="../assets/img/ic-csdn.png" /></div>
+					<a target="_blank" href="https://www.csdn.net/">CSDN</a>
+				</div>
+				<div class="common-item">
+					<div><img src="../assets/img/ic-junjin.png" /></div>
+					<a target="_blank" href="https://juejin.im/">掘金</a>
+				</div>
+				<div class="common-item">
+					<div><img src="../assets/img/ic-googlefanyi.png" /></div>
+					<a target="_blank" href="https://translate.google.cn/">Google翻译</a>
+				</div>
+				<div class="common-item">
+					<div><img src="../assets/img/ic-baidufanyi.png" /></div>
+					<a target="_blank" href="https://fanyi.baidu.com/">百度翻译</a>
+				</div>
+			</div>
+
+		</div>
+		<div class="content-line"></div>
+		<div class="classify">
+			<div class="classify-descRow-space"></div>
+			<div class="classify-descRow">
+				<div class="classify-descItem">
+					<a target="_blank" href="https://www.php.net/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/php/ic-php.png" />
+							<span>PHP官网</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">PHP是一种流行的通用脚本语言，特别适合于web开发。PHP快速，灵活和实用，为您的博客到世界上最受欢迎的网站提供强大的支持。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://www.php.net/manual/zh/index.php">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/php/ic-php.png" />
+							<span>PHP中文手册</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">本手册内容主要由函数参考构成，但也包含了语言参考，PHP 一些主要产品特点的说明以及其它补充信息。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://packagist.org/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/php/ic-packageist.png" />
+							<span>Packagist</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Packagist是Composer的主存储库。 它聚合可通过Composer安装的公共PHP软件包。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://packagist.com/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/php/ic-private.png" />
+							<span>Private Packagist</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc"> PHP 私有包的 Composer 存储库。使用Private Packagist安装Composer依赖项都是快速可靠的。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://wpackagist.org/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/php/ic-wordpress2.png" />
+							<span>WP Packagist</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">WordPress 插件和主题目录的 Composer存储库。</span>
+				</div>
+				
+				
+			</div>
+			<div class="classify-descRow-space"></div>
+			<div class="classify-descRow">
+				<div class="classify-descItem">
+					<a target="_blank" href="https://firegento.com/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/php/ic-firegento.png" />
+							<span>Firegento</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">FireGento是一群Magento爱好者。我们正在开发开源模块，并组织所谓的Hackathons和其他活动。FireGento被用作Magento社区很大一部分的游泳池。自2013年以来，FireGento是位于德国柏林的注册公司。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://www.phpcomposer.com/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/php/ic-composer.png" />
+							<span>Composer 中文网</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Composer 是 PHP 用来管理依赖关系的工具。你可以在自己的项目中声明所依赖的外部工具库，Composer 会帮你安装这些依赖的库文件。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://github.com/composer/installers">
+						<div class="classify-descItem-top">
+							<img src="../assets/img//ic-github.png" />
+							<span>Composer Installers</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">一个多框架 Composer 库安装器。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://melody.sensiolabs.org/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/ic-github.png" />
+							<span>Melody</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">构建一个 Composer 脚本文件的工具。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://github.com/FriendsOfPHP/pickle">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/ic-github.png" />
+							<span>Pickle</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc"> PHP扩展安装程序。</span>
+				</div>
+			</div>
+			<div class="classify-descRow-line"></div>
+			<div class="classify-descRow">
+				<div class="classify-titleItem">
+					<div class="line-icon"></div>
+					<span>开发框架</span>
+				</div>
+			</div>
+			<div class="classify-descRow">
+				<div class="classify-descItem">
+					<a target="_blank" href="https://laravel.com/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/php/ic-laravel.png" />
+							<span>Laravel</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Laravel 框架可能是 Web 开发人员中最受欢迎的框架。Laravel 是一个免费的开源 PHP 框架，适用于 Web 应用程序开发，且适用于移动应用程序场景。Laravel 提供了几个特定的软件包，使 Web 开发成为一项功能强大的任务.</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://cakephp.org/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/php/ic-cake.png" />
+							<span>CakePHP</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">CakePHP 框架对个人完全免费，并提供付费的商业用途。它将帮助您开发功能丰富且视觉上令人印象深刻的网站。早在本世纪初，CakePHP 就是最好的 PHP 框架。经过这么长时间，它仍然是您可以使用的最好的 PHP 框架之一。CakePHP 起初是一个简单而优雅的工具包，在过去的 15 年里它变得更加强大。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://codeigniter.org.cn/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/php/ic-ci.png" />
+							<span>CodeIgniter</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">CodeIgniter 可能是最适合开发动态网站的 PHP 框架。它是一个非常简单的轻量级 PHP 框架。它的大小只有 2 MB 左右（包括文档）。因此，CodeIgniter 本身具有最小的占用空间，它允许 Web 开发人员添加第三方插件来开发更复杂的功能。CodeIgniter 还提供了几个预构建的模块，用于为 Web 开发创建健壮的、可重用的组件。由于设置过程简单，这个 PHP 框架非常适合初学者。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://www.zend.com/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/php/ic-zend.png" />
+							<span>Zend</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Zend 框架是一个完整的面向对象的 PHP 框架。这个 PHP 框架是可定制的，对于需要添加项目特定功能的开发人员来说，这是一个好处。Zend 构建于敏捷方法之上，可帮助开发人员为大型客户创建、高质量的 Web 应用程序的框架。它非常适合复杂的企业级项目，Zend 主要关注安全性、性能和可扩展性。 Zend 框架主要受大型 IT 企业和银行等金融机构的青睐。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://symfony.com/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/php/ic-symfony.png" />
+							<span>Symfony</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span
+						class="item-desc">Symfony 于 2005 年推出，这个 PHP 框架的存在时间比列表中的任何其他框架都要长。该框架是一个广泛的 PHP MVC 框架，目前 Symfony 已经成为一个可靠和成熟的平台框架。Symfony 非常稳定、文档齐全、性能卓越。这些特点使 Symfony 成为开发大型企业项目的完美选择。</span>
+				</div>
+			</div>
+			<div class="classify-descRow-space"></div>
+			<div class="classify-descRow">
+				<div class="classify-descItem">
+					<a target="_blank" href="https://www.yiiframework.com/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/php/ic-yii.png" />
+							<span>Yii2</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Yii2 是一个神奇的存在，您希望从 PHP 框架中获得的所有特性，它基本上都能为您提供。它是 Yii 框架的修订版和高级版，一个基于组件的高性能 PHP 框架。Yii2 因其安全功能而受到网站开发人员的欢迎，这使其适用于电子商务、CMS、门户网站、论坛等项目。使用 Yii2，您可以将数据库建模为对象，从而避免编写重复的复杂性 SQL 语句。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://phalcon.io/en-us">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/php/ic-phalcon.png" />
+							<span>Phalcon</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Phalcon 是用 C 和 C ++ 编写的，但这并不意味着您必须学习 C 语言才能使用 Phalcon 框架。拥有一个底层是 C 语言扩展的 PHP 框架，这可能听起来很奇怪，但 Phalcon 是最快的 PHP 框架。Phalcon 非常易于安装，非常适合创建高度可定制的 Web 解决方案。该框架的亮点之一在于 Phalcon 在安装框架后几乎没有文件，您只需添加需要使用的模块和库，这使得开发过程非常整洁。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://getlaminas.org/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/php/ic-laminas.png" />
+							<span>Laminas</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Laminas Project，企业级PHP框架和组件社区支持的Zend Framework的开源延续。</span>
+				</div>
+
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://nette.org/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/php/ic-nette.png" />
+							<span>Nette</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Nette是适用于PHP 7的一系列成熟和独立组件。 他们共同创造了一个被评为全球第三大流行框架。 我们的理念是专注于生产力，最佳实践和安全性。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://www.studyspiral.cn/docs/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/php/ic-spiral.png" />
+							<span>Spiral</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Spiral Framework 让 PHP 开发重新令人振奋。它利用 PHP 的快速，易部署特性来实现快速开发业务逻辑，同时独特地借助 Golang 来优雅地构建起原生支持 HTTP/2, GRPC, Queue 等特性的基础架构层。Spiral Framework 非常灵活且完全遵守 PSR 规范。开发者在用它构建更快、更高效的应用时一定会感到非常愉悦。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+			</div>
+
+			<div class="classify-descRow-line"></div>
+			<div class="classify-descRow">
+				<div class="classify-titleItem">
+					<div class="line-icon"></div>
+					<span>CMS</span>
+				</div>
+			</div>
+			<div class="classify-descRow">
+				<div class="classify-descItem">
+					<a target="_blank" href="https://magento.com/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/php/ic-magento.png" />
+							<span>Magento</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Magento是一款国外主流的开源PHP电子商务程序,任何人都可以使用他创建自己的在线商店.</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://cn.wordpress.org/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/php/ic-wordpress.png" />
+							<span>WordPress</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">WordPress是一款能让您建立出色网站、博客或应用的开源软件。</span>
+				</div>
+				
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://www.drupal.org/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/php/ic-drupal.png" />
+							<span>Drupal</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Drupal是全世界最好的CMS和CMF之一，选择Drupal意味着选择了继承强大的开源成果，站在巨人的肩膀上，选择了世界级的开发标准，利用了全世界优秀的第三方模块。所以，基于Drupal，我们能开发出更优秀的产品，看的更高，走得更快！</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://www.joomla.org/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/php/ic-joomla.png" />
+							<span>Joomla</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Joomla!是一套全球知名的内容管理系统，占有全球6%的网站市场份额。 Joomla!是使用PHP语言加上MySQL数据库所开发的软件系统。可以在Linux、 Windows、MacOSX等各种不同的平台上执行。目前是由Open Source Matters这个开放源码组织进行开发与支持，这个组织的成员来自全世界各地，小组成员约有150人，包含了开发者、设计者、系统管理者、文件撰写者，以及超过2万名的参与会员。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://getgrav.org/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/php/ic-grav.png" />
+							<span>Grav</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Grav 是一个轻快、简单、可扩展的纯文件 CMS 平台，解压即用，无需安装。</span>
+				</div>
+			</div>
+			<div class="classify-descRow-space"></div>
+			<div class="classify-descRow">
+				<div class="classify-descItem">
+					<a target="_blank" href="https://backdropcms.org/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/php/ic-backdrop.png" />
+							<span>Backdrop</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">开源免费的CMS，可以帮助您为企业和非营利组织建立网站。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="http://picocms.org/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/php/ic-pico.png" />
+							<span>Pico CMS</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Pico 是一个相当简单的 CMS 系统，甚至不提供管理的后台程序。直接在线编辑内容。无需数据库支持，直接使用文件存储，因此速度巨块。支持 Markdown 格式和 twig 模板。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://www.concrete5.org/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/php/ic-concerte.png" />
+							<span>Concrete5</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">一款强大的LAMP CMS框架，核心采用了一部分ZEND FRAMEWORK框架，架构比较独特不同于传统的DEDECMS, PHPCMS等，利用内部已有的Add-ons 可以快速建立一个企业网站。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://moodle.org/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/php/ic-moodle.png" />
+							<span>Moodle</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Moodle是世界上最受欢迎的学习管理系统。 数分钟即可开始创建您的在线学习网站！</span>
+				</div>
+			</div>
+
+			<div class="classify-descRow-line"></div>
+			<div class="classify-descRow">
+				<div class="classify-titleItem">
+					<div class="line-icon"></div>
+					<span>数据库相关</span>
+				</div>
+			</div>
+			<div class="classify-descRow">
+				<div class="classify-descItem">
+					<a target="_blank" href="https://www.doctrine-project.org/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/php/ic-doctrine.png" />
+							<span>Doctrine</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Doctrine 是一个 PHP 的 ORM，基于强大的 DBAL。其中一个最主要的功能就是使用面向对象的方式执行数据库查询，受 Hibernate HQL 的影响，Doctrine 使用一种叫 DQL 的查询语句进行数据库查询。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://github.com/NodeRedis/node-redis">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/ic-github.png" />
+							<span>Illuminate Database</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Illuminate database是一个非常强大非常优秀的ORM类库，也是一个非常实用的数据库操作组件。使用它可以轻松对数据库进行查询、插入、更新、删除等操作，支持MySQL，Postgres，SQL Server，SQLlite等。它还是Laravel框架的数据库组件。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://github.com/Qihoo360/Atlas">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/ic-github.png" />
+							<span>Atlas</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Atlas是由 Qihoo 360公司Web平台部基础架构团队开发维护的一个基于MySQL协议的数据中间层项目。它在MySQL官方推出的MySQL-Proxy 0.8.2版本的基础上，修改了大量bug，添加了很多功能特性。目前该项目在360公司内部得到了广泛应用，很多MySQL业务已经接入了Atlas平台，每天承载的读写请求数达几十亿条。同时，有超过50家公司在生产环境中部署了Atlas，超过800人已加入了我们的开发者交流群，并且这些数字还在不断增加。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://cycle-orm.dev/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/php/ic-circle.png" />
+							<span>Cycle ORM</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">PHP DataMapper，ORM和数据建模引擎，旨在安全地在经典的守护进程PHP应用程序（如RoadRunner）中工作。 ORM提供了灵活的配置选项来建模数据集，强大的查询生成器并支持动态映射架构。 该引擎可以使用普通的PHP对象，支持注释声明和通过扩展的代理。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://redbeanphp.com/index.php">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/php/ic-redbean.png" />
+							<span>RedBean</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span
+						class="item-desc">一个易于使用的 PHP ORM 工具, RedBeanPHP 可以让你用 NoSQL 的语法来使用 ORM 框架。动态创建模型、配置和数据库的 orm 层。</span>
+				</div>
+			</div>
+			<div class="classify-descRow-space"></div>
+			<div class="classify-descRow">
+				<div class="classify-descItem">
+					<a target="_blank" href="http://phpdatamapper.com/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/php/ic-spot.png" />
+							<span>Spot ORM</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Spot是基于Doctrine DBAL构建的简单高效的DataMapper。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://github.com/cakephp/orm">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/php/ic-cake.png" />
+							<span>CakePHP ORM</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">CakePHP ORM提供了一种强大而灵活的方式来处理关系数据库。使用数据映射器模式，ORM允许您将数据作为实体进行操作，从而可以在应用程序中创建富有表现力的域层。 </span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://github.com/Ocramius/ProxyManager">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/ic-github.png" />
+							<span>Proxy Manager</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">一个为数据映射生成代理对象的工具集</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://github.com/auraphp/Aura.Sql">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/ic-github.png" />
+							<span>Aura.Sql</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span
+						class="item-desc">通过PDO访问SQL数据库。</span>
+				</div>
+			</div>
+
+			<div class="classify-descRow-line"></div>
+			<div class="classify-descRow">
+				<div class="classify-titleItem">
+					<div class="line-icon"></div>
+					<span>HTTP</span>
+				</div>
+			</div>
+			<div class="classify-descRow">
+				<div class="classify-descItem">
+					<a target="_blank" href="https://github.com/guzzle/guzzle">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/php/ic-guzzle.png" />
+							<span>Guzzle</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Guzzle是一个PHP的HTTP客户端，用来轻而易举地发送请求，并集成到我们的WEB服务上。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://github.com/rmccue/Requests">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/ic-github.png" />
+							<span>Requests</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Requests 是一个PHP的HTTP类库。相对于curl等类库来说，它具有简单易用且友好的API，且不依赖于curl。它支持HEAD, GET, POST, PUT, DELETE, PATCH等方法。基本能满足任何形式的HTTP请求。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="http://httplug.io/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/php/ic-httplug.png" />
+							<span>HTTPlug</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">HTTPlug是在Http客户端的一个抽象概念，并提供了一个一致的psr-7兼容的包装多个Http客户端</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://github.com/kriswallsmith/Buzz">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/ic-github.png" />
+							<span>Buzz</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">PHP的轻量级HTTP客户端</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://github.com/php-vcr/php-vcr">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/ic-github.png" />
+							<span>PHP VCR</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">VCR Ruby库在PHP的实现，PHP-VCR 可以记录你测试套件的 HTTP 交互，并且在今后运行更快、更准确的测试中重放。</span>
+				</div>
+			</div>
+
+			<div class="classify-descRow-space"></div>
+			<div class="classify-descRow">
+				
+				<div class="classify-descItem">
+					<a target="_blank" href="https://github.com/symfony/http-client">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/ic-github.png" />
+							<span>Symfony HTTP</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">HttpClient组件提供了强大的方法来同步或异步获取HTTP资源。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://github.com/Nyholm/psr7">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/ic-github.png" />
+							<span>Nyholm PSR-7</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">超轻量级PSR-7实现。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://github.com/tebru/retrofit-php">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/ic-github.png" />
+							<span>Retrofit PHP</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Retrofit是类型安全的REST客户端。它是从square / retrofit借鉴来的， 并用PHP实现。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://github.com/laminas/laminas-diactoros">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/ic-github.png" />
+							<span>laminas-diactoros</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">PSR HTTP消息实现</span>
+				</div>
+			</div>
+
+			<div class="classify-descRow-line"></div>
+		<div class="classify-descRow">
+			<div class="classify-titleItem">
+				<div class="line-icon"></div>
+				<span>渲染模版</span>
+			</div>
+		</div>
+		<div class="classify-descRow">
+			<div class="classify-descItem">
+				<a target="_blank" href="https://twig.symfony.com/">
+					<div class="classify-descItem-top">
+						<img src="../assets/img/php/ic-twig.png" />
+						<span>Twig</span>
+					</div>
+				</a>
+				<div class="classify-descItemLine"></div>
+				<span class="item-desc">Twig是一款灵活、快速、安全的PHP模板引擎。</span>
+			</div>
+			<div class="classify-descItem-space"></div>
+			<div class="classify-descItem">
+				<a target="_blank" href="https://www.smarty.net/">
+					<div class="classify-descItem-top">
+						<img src="../assets/img/php/ic-smarty.png" />
+						<span>Smarty</span>
+					</div>
+				</a>
+				<div class="classify-descItemLine"></div>
+				<span
+					class="item-desc">Smarty是一个使用PHP写出来的模板引擎，是业界最著名的PHP模板引擎之一。它分离了逻辑代码和外在的内容，提供了一种易于管理和使用的方法，用来将原本与HTML代码混杂在一起PHP代码逻辑分离。</span>
+			</div>
+			<div class="classify-descItem-space"></div>
+			<div class="classify-descItem">
+				<a target="_blank" href="http://platesphp.com/">
+					<div class="classify-descItem-top">
+						<img src="../assets/img/php/ic-plates.png" />
+						<span>Plates</span>
+					</div>
+				</a>
+				<div class="classify-descItemLine"></div>
+				<span class="item-desc">Plates 是原生 PHP 模板系统，非常容易使用和扩展，灵感来源于 Twig 模板引擎，包括现代化的模板语言功能。Plates 主要是为在编译模板语言中选择使用原生 PHP 模板的开发者提供的。</span>
+			</div>
+			<div class="classify-descItem-space"></div>
+			<div class="classify-descItem">
+				<a target="_blank" href="https://phptal.org/">
+					<div class="classify-descItem-top">
+						<img src="../assets/img/php/ic-phphtml.png" />
+						<span>PHPTAL</span>
+					</div>
+				</a>
+				<div class="classify-descItemLine"></div>
+				<span class="item-desc">PHPTAL是用于PHP的XML / XHTML模板库。</span>
+			</div>
+			<div class="classify-descItem-space"></div>
+			<div class="classify-descItem">
+				<a target="_blank" href="https://github.com/arnaud-lb/MtHaml">
+					<div class="classify-descItem-top">
+						<img src="../assets/img/ic-github.png" />
+						<span>MtHaml</span>
+					</div>
+				</a>
+				<div class="classify-descItemLine"></div>
+				<span class="item-desc">MtHaml是HAML语言的PHP实现，可以实现多种语言。当前支持的目标是PHP和Twig，可以轻松添加新目标。</span>
+			</div>
+		</div>
+
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="footer-layout">
+			<span><a target="_blank" href="about.html">关于本站</a></span>
+			<span><a target="_blank" href="http://www.beian.miit.gov.cn/">京ICP备20008486号</a></span>
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="../assets/scripts/index.js"></script>
+</body>
+
+</html>

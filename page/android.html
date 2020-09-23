@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang=zh-CN>
+
+<head>
+	<title>Android开发导航-ZDZN</title>
+	<meta charset=utf-8>
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta content="width=device-width,initial-scale=1,maximum-scale=1">
+	<meta name="baidu-site-verification" content="2nmFOW0dW1" />
+	<meta name="keywords" content="Android开发导航,安卓,android,android app,Gradle,Android 开发者,安卓开发者,android文档" />
+	<meta name="description" content="Android开发导航,安卓,android,android app,Gradle,Android 开发者,安卓开发者,android文档" />
+	<meta content=jsthon name=author>
+	<link rel="ZDZN icon" type="image/x-icon" href="../assets/img/logo.ico" />
+	<link href="../assets/css/index.css" rel=stylesheet>
+	<script type="text/javascript" src="../assets/scripts/jquery.min.js"></script>
+	<script type="text/javascript" src="../assets/scripts/baidu.js"></script>
+</head>
+
+<body>
+	<div class="head">
+		<div class="head-layout">
+			<img class="logo" src="../assets/img/logo.png" onclick="javascript:location.href='../index.html'" />
+			<div class="tab">
+				<div class="tab-item2"><a target="_blank" href="../index.html">首页</a></div>
+				<div class="tab-item2"><a target="_blank" href="blog.html">博客集</a></div>
+			</div>
+		</div>
+	</div>
+	<div class="search-group">
+		<div class="search-layout">
+			<div class="search-container">
+				<div class="search-tab" id='search-tab'>
+					<span id='baidu'>百度</span>
+					<span id='google'>Google</span>
+					<span id='github'>GitHub</span>
+					<span id='overflow'>StackOverflow</span>
+					<span id='npm'>NPM</span>
+				</div>
+				<div class="search-box"></div>
+				<form class="search-form" id='search-form' target="_blank" action="https://www.baidu.com/s">
+					<input class="search-keyword" id='search-keyword' type=search autocomplete=off autofocus
+						placeholder="百度一下，你就知道" name='word'>
+					<input class="submit" type=submit value="">
+				</form>
+				<div id="dropdown">
+					<ul></ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="container">
+		<div class="common">
+			<div class="common-row">
+				<div class="common-item">
+					<div><img src="../assets/img/ic-github.png" /></div>
+					<a target="_blank" href="https://github.com/">GitHub</a>
+				</div>
+				<div class="common-item">
+					<div><img src="../assets/img/ic-gitlab.png" /></div>
+					<a target="_blank" href="https://gitlab.com/">GitLab</a>
+				</div>
+				<div class="common-item">
+					<div><img src="../assets/img/ic-gitee.png" /></div>
+					<a target="_blank" href="https://gitee.com/">Gitee</a>
+				</div>
+				<div class="common-item">
+					<div><img src="../assets/img/ic-bitbucket.png" /></div>
+					<a target="_blank" href="https://bitbucket.org/product">Bitbucket.org</a>
+				</div>
+				<div class="common-item">
+					<div><img src="../assets/img/ic-stackoverflow.png" /></div>
+					<a target="_blank" href="https://stackoverflow.com/">StackOverflow</a>
+				</div>
+				<div class="common-item">
+					<div><img src="../assets/img/ic-google.png" /></div>
+					<a target="_blank" href="https://www.google.com/search">Google</a>
+				</div>
+				<div class="common-item">
+					<div><img src="../assets/img/ic-baidu.png" /></div>
+					<a target="_blank" href="https://www.baidu.com/s">百度</a>
+				</div>
+			</div>
+			<div class="common-row">
+				<div class="common-item">
+					<div><img src="../assets/img/ic-leetcode.png" /></div>
+					<a target="_blank" href="https://leetcode-cn.com/">LeetCode</a>
+				</div>
+				<div class="common-item">
+					<div><img src="../assets/img/ic-v2ex.png" /></div>
+					<a target="_blank" href="https://www.v2ex.com/">V2EX</a>
+				</div>
+				<div class="common-item">
+					<div><img src="../assets/img/ic-segmentfault.png" /></div>
+					<a target="_blank" href="https://segmentfault.com/">SegmentFault</a>
+				</div>
+				<div class="common-item">
+					<div><img src="../assets/img/ic-csdn.png" /></div>
+					<a target="_blank" href="https://www.csdn.net/">CSDN</a>
+				</div>
+				<div class="common-item">
+					<div><img src="../assets/img/ic-junjin.png" /></div>
+					<a target="_blank" href="https://juejin.im/">掘金</a>
+				</div>
+				<div class="common-item">
+					<div><img src="../assets/img/ic-googlefanyi.png" /></div>
+					<a target="_blank" href="https://translate.google.cn/">Google翻译</a>
+				</div>
+				<div class="common-item">
+					<div><img src="../assets/img/ic-baidufanyi.png" /></div>
+					<a target="_blank" href="https://fanyi.baidu.com/">百度翻译</a>
+				</div>
+			</div>
+
+		</div>
+		<div class="content-line"></div>
+		<div class="classify">
+			<div class="classify-descRow-space"></div>
+			<div class="classify-descRow">
+				<div class="classify-descItem">
+					<a target="_blank" href="https://developer.android.google.cn/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/android/ic-android.png" />
+							<span>Develper</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">面向 Android 开发者的官方网站。为应用开发者和设计人员提供 Android SDK 和文档。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://developer.android.google.cn/guide">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/android/ic-android.png" />
+							<span>官方教程</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Android 开发者指南，Google出品的官方 Android 开发教程。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="http://www.android-studio.org/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/android/ic-studio.png" />
+							<span>Android Studio</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc"> Android 开发自学的社区，也提供Android培训和工具下载的资料</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://docs.gradle.org/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/android/ic-gradle.png" />
+							<span>Gradle</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Gradle是一个基于Apache Ant和Apache Maven概念的项目自动化构建开源工具。它使用一种基于Groovy的特定领域语言(DSL)来声明项目设置，目前也增加了基于Kotlin语言的kotlin-based DSL，抛弃了基于XML的各种繁琐配置。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="http://avatarqing.github.io/Gradle-Plugin-User-Guide-Chinese-Verision/index.html">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/android/ic-gradle.png" />
+							<span>Gradle 使用指南</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Gradle中文使用指南</span>
+				</div>
+			</div>
+			<div class="classify-descRow-line"></div>
+			<div class="classify-descRow">
+				<div class="classify-titleItem">
+					<div class="line-icon"></div>
+					<span>开发框架</span>
+				</div>
+			</div>
+			<div class="classify-descRow">
+				<div class="classify-descItem">
+					<a target="_blank" href="https://didi.github.io/virtual-apk.html">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/android/ic-virtual-apk.png" />
+							<span>VirtualAPK</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">VirtualAPK是滴滴出行自研的一款优秀的插件化框架，通过将业务模块插件化，可随时更新插件来发布新功能，具备版本随时发布的能力。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://github.com/alibaba/ARouter/blob/master/README_CN.md">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/ic-github.png" />
+							<span>ARouter</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">一个用于帮助 Android App 进行组件化改造的框架，支持模块间的路由、通信、解耦</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://github.com/alibaba/atlas/tree/master/atlas-docs">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/ic-github.png" />
+							<span>Atlas</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Atlas是伴随着手机淘宝的不断发展而衍生出来的一个运行于Android系统上的一个容器化框架，我们也叫动态组件化(Dynamic Bundle)框架。它主要提供了解耦化、组件化、动态性的支持。覆盖了工程师的工程编码期、Apk运行期以及后续运维期的各种问题。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://github.com/Qihoo360/RePlugin/blob/dev/README_CN.md">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/android/ic-replugin.png" />
+							<span>RePlugin</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span
+						class="item-desc">restify是一个基于Nodejs的REST应用框架，支持服务器端和客户端。restify比起express更专注于REST服务，去掉了express中的template,
+						render等功能，同时强化了REST协议使用，版本化支持，HTTP的异常处理。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://github.com/DroidPluginTeam/DroidPlugin/blob/master/readme_cn.md">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/ic-github.png" />
+							<span>Droid Plugin</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">DroidPlugin 是Andy Zhang在Android系统上实现了一种新的 插件机制 :它可以在无需安装、修改的情况下运行APK文件,此机制对改进大型APP的架构，实现多团队协作开发具有一定的好处。</span>
+				</div>
+			</div>
+			<div class="classify-descRow-space"></div>
+			<div class="classify-descRow">
+				<div class="classify-descItem">
+					<a target="_blank" href="https://github.com/singwhatiwanna/dynamic-load-apk">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/android/ic-dl.png" />
+							<span>DynamicLoadApk</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Apk动态加载框架</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="http://code.wequick.net/Small/cn/home">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/android/ic-small.png" />
+							<span>Small</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">世界那么大，组件那么小。Small，做最轻巧的跨平台插件化框架。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://github.com/TommyLemon/Android-ZBLibrary">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/ic-github.png" />
+							<span>Android-ZBLibrary</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Android MVP 快速开发框架，做国内 「示例最全面」「注释最详细」「使用最简单」「代码最严谨」的 Android 开源 UI 框架。</span>
+				</div>
+
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="http://6thsolution.github.io/EasyMVP/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/ic-github.png" />
+							<span>EasyMVP</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">EasyMVP消除了开发MVP时多余的模板代码。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://github.com/xiaojinzi123/Component">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/android/ic-compent.png" />
+							<span>Component</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">一个强大、100% 兼容、支持 AndroidX、支持 Kotlin并且灵活的组件化框架</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+			</div>
+
+			<div class="classify-descRow-line"></div>
+			<div class="classify-descRow">
+				<div class="classify-titleItem">
+					<div class="line-icon"></div>
+					<span>图片加载</span>
+				</div>
+			</div>
+			<div class="classify-descRow">
+				<div class="classify-descItem">
+					<a target="_blank" href="https://muyangmin.github.io/glide-docs-cn/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/android/ic-glide.png" />
+							<span>Glide</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Glide是一个快速高效的Android图片加载库，注重于平滑的滚动。Glide提供了易用的API，高性能、可扩展的图片解码管道（decode pipeline），以及自动的资源池技术。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://square.github.io/picasso/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/android/ic-square.png" />
+							<span>Picasso</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">强大的Android 图片下载和缓存库。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://frescolib.org/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/android/ic-fresco.png" />
+							<span>Fresco</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Fresco 是一个强大的图片加载组件。使用它之后，你不需要再去关心图片的加载和显示这些繁琐的事情！ 支持 Android 2.3 及以后的版本。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://github.com/nostra13/Android-Universal-Image-Loader">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/ic-github.png" />
+							<span>UIL</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">UIL旨在为图像加载，缓存和显示提供功能强大，灵活且高度可定制的工具。它提供了许多配置选项，并且可以很好地控制图像加载和缓存过程。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://coil-kt.github.io/coil/README-zh/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/android/ic-coil.png" />
+							<span>Coil</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Coil是一个Android图片加载库，通过Kotlin协程的方式加载图片。</span>
+				</div>
+			</div>
+
+			<div class="classify-descRow-line"></div>
+			<div class="classify-descRow">
+				<div class="classify-titleItem">
+					<div class="line-icon"></div>
+					<span>工具库</span>
+				</div>
+			</div>
+			<div class="classify-descRow">
+				<div class="classify-descItem">
+					<a target="_blank" href="https://square.github.io/okhttp/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/android/ic-square.png" />
+							<span>OkHttp</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">OkHttp是一个高效的HTTP客户端</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://developer.android.google.cn/training/volley?hl=zh_cn">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/android/ic-android.png" />
+							<span>Volley</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Volley 是一个可让 Android 应用更轻松、更快捷地联网的 HTTP 库。您可以在 GitHub 上获取 Volley。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://amitshekhar.me/Fast-Android-Networking/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/ic-github.png" />
+							<span>FAN</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Fast Android Networking 库是一个功能强大的网络库，用于在 OkHttp Networking Layer 之上进行 Android 应用中的任何类型的网络连接。它负责处理连接过程中的所有操作，所以你只需要发送请求并接收响应。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://github.com/wyouflf/xUtils3">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/ic-github.png" />
+							<span>xUtils3</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">xUtils是基于Afinal开发的目前功能比较完善的一个Android开源框架,xUtils 包含了orm, http(s), image, view注解, 但依然很轻量级(246K), 并且特性强大</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+
+				<div class="classify-descItem">
+					<a target="_blank" href="https://github.com/google/gson">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/ic-github.png" />
+							<span>Gson</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Gson 是 Google 提供的用来在 Java 对象和 JSON 数据之间进行映射的 Java 类库。可以将一个 JSON 字符串转成一个 Java 对象，或者反过来。</span>
+				</div>
+
+			</div>
+			<div class="classify-descRow-space"></div>
+			<div class="classify-descRow">
+				<div class="classify-descItem">
+					<a target="_blank" href="https://github.com/FasterXML/jackson#jackson-project-home-github">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/ic-github.png" />
+							<span>Jackson</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span
+						class="item-desc">Jackson 是一个 Java 的用来处理 JSON 格式数据的类库，性能非常好。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://github.com/alibaba/fastjson/wiki/Quick-Start-CN">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/ic-github.png" />
+							<span>FastJson</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">fastjson是阿里巴巴的开源JSON解析库，它可以解析JSON格式的字符串，支持将Java Bean序列化为JSON字符串，也可以从JSON字符串反序列化到JavaBean。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://square.github.io/moshi/1.x/moshi/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/android/ic-square.png" />
+							<span>Moshi</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Moshi是适用于Android和Java的现代JSON库。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://realm.io/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/android/ic-realm.png" />
+							<span>Realm</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Realm是一个跨平台的移动数据库引擎，目前支持iOS、Android平台，同时支持Objective-C、Swift、Java、React Native、Xamarin等多种编程语言</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://greenrobot.org/greendao/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/android/ic-greenrobot.png" />
+							<span>GreenDao</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">GreenDAO是一个开源的安卓ORM框架,能够使SQLite数据库的开发再次变得有趣。它减轻开发人员处理低级数据库需求,同时节省开发时间</span>
+				</div>
+			</div>
+			<div class="classify-descRow-space"></div>
+			<div class="classify-descRow">
+				<div class="classify-descItem">
+					<a target="_blank" href="https://github.com/requery/requery">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/ic-github.png" />
+							<span>Requery</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">具有RxJava和Java 8支持的Java / Kotlin / Android轻巧但功能强大的对象映射和ORM。可以轻松地映射到数据库或创建数据库，从使用Java的任何平台执行查询和更新。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://github.com/Bilibili/ijkplayer">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/ic-github.png" />
+							<span>ijkplayer</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span
+						class="item-desc">ijkplayer是一个基于FFmpeg的轻量级Android/iOS视频播放器。FFmpeg的是全球领先的多媒体框架，能够解码，编码， 转码，复用，解复用，流，过滤器和播放大部分的视频格式。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://github.com/google/ExoPlayer">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/ic-github.png" />
+							<span>ExoPlayer</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">ExoPlayer是运行在YouTube app Android版本上的视频播放器</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://alhazmy13.net/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/ic-github.png" />
+							<span>MediaPicker</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">是一个可以选择多个图像，视频或语音Android库</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://github.com/esafirm/android-image-picker">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/ic-github.png" />
+							<span>ImagePicker</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Android自定义相册，完全仿微信UI，实现了拍照、图片选择（单选/多选）、 裁剪 、旋转、等功能。</span>
+				</div>
+			</div>
+
+			<div class="classify-descRow-line"></div>
+			<div class="classify-descRow">
+				<div class="classify-titleItem">
+					<div class="line-icon"></div>
+					<span>图表相关</span>
+				</div>
+			</div>
+			<div class="classify-descRow">
+				<div class="classify-descItem">
+					<a target="_blank" href="https://github.com/PhilJay/MPAndroidChart">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/ic-github.png" />
+							<span>MPAndroidChart</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">MPAndroidChart 是 Android 一个强大且容易使用的图表库</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://github.com/diogobernardino/WilliamChart">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/ic-github.png" />
+							<span>WilliamChart</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">WilliamChart是github上的一个android图表控件</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://github.com/lecho/hellocharts-android">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/ic-github.png" />
+							<span>HelloCharts</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">适用于Android的图表库，与API 8+（Android 2.2）兼容。当硬件加速可用时效果最好，因此建议使用API​​ 14+（Android 4.0）。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://github.com/AnyChart/AnyChart-Android">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/ic-github.png" />
+							<span>AnyChart-Android</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">AnyChart Android Charts是一个了不起的数据可视化库，可轻松在Android应用程序中创建交互式图表。它可以在API 19+（Android 4.4）上运行，并具有数十种内置图表类型。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://github.com/ddanny/achartengine">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/ic-github.png" />
+							<span>achartengine</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">AChartEngine是适用于Android应用程序的图表库。</span>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<footer class="footer">
+		<div class="footer-layout">
+			<span><a target="_blank" href="about.html">关于本站</a></span>
+			<span><a target="_blank" href="http://www.beian.miit.gov.cn/">京ICP备20008486号</a></span>
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="../assets/scripts/index.js"></script>
+</body>
+
+</html>

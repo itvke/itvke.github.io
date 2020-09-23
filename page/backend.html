@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang=zh-CN>
+
+<head>
+	<title>后端开发导航-ZDZN</title>
+	<meta charset=utf-8>
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta content="width=device-width,initial-scale=1,maximum-scale=1">
+	<meta name="baidu-site-verification" content="2nmFOW0dW1" />
+	<meta name="keywords" content="后端开发,web后端" />
+	<meta name="description" content="后端开发导航,Mysql,Redis,Mongodb,Shell,docker,CRT,XShell,云服务器" />
+	<meta content=jsthon name=author>
+	<link rel="ZDZN icon" type="image/x-icon" href="../assets/img/logo.ico" />
+	<link href="../assets/css/index.css" rel=stylesheet>
+	<script type="text/javascript" src="../assets/scripts/jquery.min.js"></script>
+	<script type="text/javascript" src="../assets/scripts/baidu.js"></script>
+</head>
+
+<body>
+	<div class="head">
+		<div class="head-layout">
+			<img class="logo" src="../assets/img/logo.png" onclick="javascript:location.href='../index.html'" />
+			<div class="tab">
+				<div class="tab-item2"><a target="_blank" href="../index.html">首页</a></div>
+				<div class="tab-item2"><a target="_blank" href="blog.html">博客集</a></div>
+			</div>
+		</div>
+	</div>
+	<div class="search-group">
+		<div class="search-layout">
+			<div class="search-container">
+				<div class="search-tab" id='search-tab'>
+					<span id='baidu'>百度</span>
+					<span id='google'>Google</span>
+					<span id='github'>GitHub</span>
+					<span id='overflow'>StackOverflow</span>
+					<span id='npm'>NPM</span>
+				</div>
+				<div class="search-box"></div>
+				<form class="search-form" id='search-form' target="_blank" action="https://www.baidu.com/s">
+					<input class="search-keyword" id='search-keyword' type=search autocomplete=off autofocus
+						placeholder="百度一下，你就知道" name='word'>
+					<input class="submit" type=submit value="">
+				</form>
+				<div id="dropdown">
+					<ul></ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="container">
+		<div class="common">
+			<div class="common-row">
+				<div class="common-item">
+					<div><img src="../assets/img/ic-github.png" /></div>
+					<a target="_blank" href="https://github.com/">GitHub</a>
+				</div>
+				<div class="common-item">
+					<div><img src="../assets/img/ic-gitlab.png" /></div>
+					<a target="_blank" href="https://gitlab.com/">GitLab</a>
+				</div>
+				<div class="common-item">
+					<div><img src="../assets/img/ic-gitee.png" /></div>
+					<a target="_blank" href="https://gitee.com/">Gitee</a>
+				</div>
+				<div class="common-item">
+					<div><img src="../assets/img/ic-bitbucket.png" /></div>
+					<a target="_blank" href="https://bitbucket.org/product">Bitbucket.org</a>
+				</div>
+				<div class="common-item">
+					<div><img src="../assets/img/ic-stackoverflow.png" /></div>
+					<a target="_blank" href="https://stackoverflow.com/">StackOverflow</a>
+				</div>
+				<div class="common-item">
+					<div><img src="../assets/img/ic-google.png" /></div>
+					<a target="_blank" href="https://www.google.com/search">Google</a>
+				</div>
+				<div class="common-item">
+					<div><img src="../assets/img/ic-baidu.png" /></div>
+					<a target="_blank" href="https://www.baidu.com/s">百度</a>
+				</div>
+			</div>
+			<div class="common-row">
+				<div class="common-item">
+					<div><img src="../assets/img/ic-leetcode.png" /></div>
+					<a target="_blank" href="https://leetcode-cn.com/">LeetCode</a>
+				</div>
+				<div class="common-item">
+					<div><img src="../assets/img/ic-v2ex.png" /></div>
+					<a target="_blank" href="https://www.v2ex.com/">V2EX</a>
+				</div>
+				<div class="common-item">
+					<div><img src="../assets/img/ic-segmentfault.png" /></div>
+					<a target="_blank" href="https://segmentfault.com/">SegmentFault</a>
+				</div>
+				<div class="common-item">
+					<div><img src="../assets/img/ic-csdn.png" /></div>
+					<a target="_blank" href="https://www.csdn.net/">CSDN</a>
+				</div>
+				<div class="common-item">
+					<div><img src="../assets/img/ic-junjin.png" /></div>
+					<a target="_blank" href="https://juejin.im/">掘金</a>
+				</div>
+				<div class="common-item">
+					<div><img src="../assets/img/ic-googlefanyi.png" /></div>
+					<a target="_blank" href="https://translate.google.cn/">Google翻译</a>
+				</div>
+				<div class="common-item">
+					<div><img src="../assets/img/ic-baidufanyi.png" /></div>
+					<a target="_blank" href="https://fanyi.baidu.com/">百度翻译</a>
+				</div>
+			</div>
+
+		</div>
+		<div class="content-line"></div>
+		<div class="classify">
+			<div class="classify-descRow">
+				<div class="classify-titleItem">
+					<div class="line-icon"></div>
+					<span>云服务器</span>
+				</div>
+			</div>
+			<div class="classify-descRow">
+				<div class="classify-descItem">
+					<a target="_blank" href="https://www.aliyun.com/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/backend/ic-aliyun.png" />
+							<span>阿里云</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">阿里云创立于2009年，是全球领先的云计算及人工智能科技公司，为200多个国家和地区的企业、开发者和政府机构提供服务。阿里云致力于以在线公共服务的方式，提供安全、可靠的计算和数据处理能力，让计算和人工智能成为普惠科技。2017年1月阿里云成为奥运会全球指定云服务商。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://cloud.tencent.com/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/backend/ic-tencent.png" />
+							<span>腾讯云</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">腾讯云为数百万的企业和开发者提供安全稳定的云计算服务，涵盖云服务器、云数据库、云存储、视频与CDN、域名注册等全方位云服务和各行业解决方案。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://cloud.baidu.com/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/backend/ic-baidu.png" />
+							<span>百度云</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">百度智能云专注云计算、智能大数据、人工智能服务，提供稳定的云服务器、云主机、云存储、CDN、域名注册、物联网等云服务,支持API对接,快速备案等专业解决方案。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://www.ksyun.com/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/backend/ic-jinshan.png" />
+							<span>金山云</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">全球高品质云服务专家，云计算领先平台，云产品解决方案，游戏云平台，先进医疗云平台，专业政务云、音视频解决方案</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://activity.huaweicloud.com/promotion/index.html">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/backend/ic-huawei.png" />
+							<span>华为云</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span
+						class="item-desc">华为云最新优惠促销活动汇聚了云服务器,云数据库,云存储等优势产品,推出打折促销,代金券,推荐送等多种福利活动,还有更多精彩的线下大会及技术沙龙等着你来参与-华为云</span>
+				</div>
+
+			</div>
+			<div class="classify-descRow-space"></div>
+			<div class="classify-descRow">
+				<div class="classify-descItem">
+					<a target="_blank" href="https://www.amazonaws.cn/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/backend/ic-aws.png" />
+							<span>AWS中国</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">亚马逊云服务(AWS)为您提供了一系列安全可靠的、可扩展的以及价格低廉的云计算平台， 可进行数据的备份与存储、网站托管及游戏开发等服务，仅按使用量付费。
+					</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://www.qiniu.com/products/qvm">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/backend/ic-qiniu.png" />
+							<span>七牛云</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">七牛云主机服务是围绕云主机为核心，推出的含云硬盘、数据库、高防、负载均衡等解决方案为一体的云计算综合服务。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://www.west.cn/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/backend/ic-west.png" />
+							<span>西部数码</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span
+						class="item-desc">西部数码是基于云计算知名的互联网服务提供商,18年专业知名品牌。专业提供云服务器、虚拟主机、域名注册、企业邮箱等,50余万个虚拟主机网站及1000余万个域名用户的共同选择！</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://www.qingcloud.com/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/backend/ic-pingyun.png" />
+							<span>QingCloud</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">青云QingCloud
+						是一家技术领先的企业级云服务商与数字化转型解决方案提供商，以软件定义为核心，致力于为企业提供自主可控、中立可靠、性能卓越、灵活开放的云计算产品与服务。</span>
+				</div>
+			</div>
+			<div class="classify-descRow-line"></div>
+			<div class="classify-descRow">
+				<div class="classify-titleItem">
+					<div class="line-icon"></div>
+					<span>数据库</span>
+				</div>
+			</div>
+			<div class="classify-descRow">
+				<div class="classify-descItem">
+					<a target="_blank" href="https://www.mysql.com/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/backend/ic-mysql.png" />
+							<span>MySQL</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">MySQL是一个关系型数据库管理系统，由瑞典MySQL AB 公司开发，属于 Oracle 旗下产品。MySQL 是最流行的关系型数据库管理系统之一，在 WEB
+						应用方面，MySQL是最好的 RDBMS (Relational Database Management System，关系数据库管理系统) 应用软件之一。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://www.mongodb.com/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/backend/ic-mongodb.png" />
+							<span>MongoDB</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">MongoDB是为现代应用程序开发人员和云时代构建的基于文档的通用分布式数据库。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://www.postgresql.org/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/backend/ic-postgresql.png" />
+							<span>PostgreSQL</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span
+						class="item-desc">PostgreSQL是一种特性非常齐全的自由软件的对象-关系型数据库管理系统（ORDBMS），是以加州大学计算机系开发的POSTGRES，4.2版本为基础的对象关系型数据库管理系统。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://redis.io/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/backend/ic-redis.png" />
+							<span>Redis</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Redis 即远程字典服务，是一个开源的使用ANSI C语言编写、支持网络、可基于内存亦可持久化的日志型、Key-Value数据库，并提供多种语言的API。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="http://memcached.org/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/backend/ic-memcached.png" />
+							<span>Memcached</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Memcached是一套分布式的高速缓存系统，由LiveJournal的Brad Fitzpatrick开发，但被许多网站使用。这是一套开放源代码软件，以BSD
+						license授权发布。</span>
+				</div>
+			</div>
+
+			<div class="classify-descRow-line"></div>
+			<div class="classify-descRow">
+				<div class="classify-titleItem">
+					<div class="line-icon"></div>
+					<span>文档手册</span>
+				</div>
+			</div>
+			<div class="classify-descRow">
+				<div class="classify-descItem">
+					<a target="_blank" href="http://www.deituicms.com/mysql8cn/cn/web.html">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/backend/ic-mysql.png" />
+							<span>Mysql 中文手册</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Mysq 8.0中文手册,本手册直接使用谷歌翻译，如有问题请看英文原版..</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://mongoing.com/docs/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/backend/ic-mongodb.png" />
+							<span>Mongodb 文档</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">MongoDB文档的中文翻译工作是由开源社区的成员在执行。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="http://www.postgres.cn/docs/12/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/backend/ic-postgresql.png" />
+							<span>PostgreSQL 文档</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">PostgreSQL 9.6版本以后的中文手册最初基于彭煜玮副教授翻译的 《PostgreSQL 9.6.0 文档》，后续版本的中文手册主要在前一版本的基础上作增量翻译。
+						《PostgreSQL 12.2手册》基于前一版本的《PostgreSQL 11.2手册》翻译。
+						翻译工作由文档翻译组志愿者chegong18,sizhitu,sunshinerxu,ChenHuajun,jingsam,messon007等完成。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="http://redisdoc.com/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/backend/ic-redis.png" />
+							<span>Redis 命令参考</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">由本文档是译者黄健宏创作的《Redis使用手册》</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://www.nginx.cn/doc/index.html">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/backend/ic-nginx.png" />
+							<span>Nginx 文档</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Nginx
+						是一个高性能的HTTP和反向代理web服务器，同时也提供了IMAP/POP3/SMTP服务。Nginx是由伊戈尔·赛索耶夫为俄罗斯访问量第二的Rambler.ru站点（俄文：Рамблер）开发的，第一个公开版本0.1.0发布于2004年10月4日。</span>
+				</div>
+			</div>
+			<div class="classify-descRow-space"></div>
+			<div class="classify-descRow">
+				<div class="classify-descItem">
+					<a target="_blank" href="http://httpd.apache.org/docs/2.4/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/backend/ic-apache.png" />
+							<span>Apache 文档</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span
+						class="item-desc">Apache是世界使用排名第一的Web服务器软件。它可以运行在几乎所有广泛使用的计算机平台上，由于其跨平台和安全性被广泛使用，是最流行的Web服务器端软件之一。它快速、可靠并且可通过简单的API扩充，将Perl/Python等解释器编译到服务器中。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://www.elastic.co/guide/cn/elasticsearch/guide/current/index.html">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/backend/ic-es.png" />
+							<span>ElasticSearch</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Elasticsearch是一个基于Lucene的搜索服务器。它提供了一个分布式多用户能力的全文搜索引擎，基于RESTful
+						web接口。Elasticsearch是用Java语言开发的，并作为Apache许可条款下的开放源码发布，是一种流行的企业级搜索引擎。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="http://kafka.apache.org/documentation/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/backend/ic-kafka.png" />
+							<span>Kafka</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span
+						class="item-desc">Kafka是由Apache软件基金会开发的一个开源流处理平台，由Scala和Java编写。Kafka是一种高吞吐量的分布式发布订阅消息系统，它可以处理消费者在网站中的所有动作流数据</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem" style="display: none;">
+					<a target="_blank" href="https://turnon.gitee.io/linux-tutorial/#linux-%E5%91%BD%E4%BB%A4">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/backend/ic-linux.png" />
+							<span>Linux 命令</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Linux命令大全</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem" style="display: none;">
+					<a target="_blank" href="https://github.com/fengyuhetao/shell">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/backend/ic-shell.png" />
+							<span>Shell 命令</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Shell 命令大全</span>
+				</div>
+			</div>
+
+			<div class="classify-descRow-line"></div>
+			<div class="classify-descRow">
+				<div class="classify-titleItem">
+					<div class="line-icon"></div>
+					<span>工具</span>
+				</div>
+			</div>
+			<div class="classify-descRow">
+				<div class="classify-descItem">
+					<a target="_blank" href="https://about.gitlab.com/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/backend/ic-gitlab.png" />
+							<span>Gitlab</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">GitLab
+						是一个用于仓库管理系统的开源项目，使用Git作为代码管理工具，并在此基础上搭建起来的web服务。安装方法是参考GitLab在GitHub上的Wiki页面。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://tortoisesvn.net/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/backend/ic-svn.png" />
+							<span>SVN</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span
+						class="item-desc">SVN是subversion的缩写，是一个开放源代码的版本控制系统，通过采用分支管理系统的高效管理，简而言之就是用于多个人共同开发同一个项目，实现共享资源，实现最终集中式的管理.</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://docs.docker.com/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/backend/ic-docker.png" />
+							<span>Docker</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Docker 是一个开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移植的镜像中，然后发布到任何流行的 Linux或Windows
+						机器上，也可以实现虚拟化。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://www.jenkins.io/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/backend/ic-jenkins.png"/>
+							<span>Jenkins</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Jenkins是开源CI&CD软件领导者， 提供超过1000个插件来支持构建、部署、自动化， 满足任何项目的需要。
+					</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				
+				<div class="classify-descItem">
+					<a target="_blank" href="https://filezilla-project.org/download.php?show_all=1">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/backend/ic-filez.png" />
+							<span>Filezilla</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span
+						class="item-desc">FileZilla是一个免费开源的FTP软件，分为客户端版本和服务器版本，具备所有的FTP软件功能。可控性、有条理的界面和管理多站点的简化方式使得Filezilla客户端版成为一个方便高效的FTP客户端工具，而FileZilla
+						Server则是一个小巧并且可靠的支持FTP&SFTP的FTP服务器软件。</span>
+				</div>
+			</div>
+			<div class="classify-descRow-space"></div>
+			
+			<div class="classify-descRow">
+				<div class="classify-descItem">
+					<a target="_blank" href="http://www.navicat.com.cn/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/backend/ic-navicat.png" />
+							<span>Navicat</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Navicat 是世界各地超过 300 万名数据库用户的最佳选择。跨越 7 大洲共 138 个国家，超过 16 万名注册客户选用 Navicat
+						来管理他们的数据库。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://redisdesktop.com/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/backend/ic-redis.png" />
+							<span>RDM</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Redis Desktop Manager（又名RDM）—是用于Windows，Linux，MacOS和iPadOS的快速Redis数据库管理应用程序。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://xshell.en.softonic.com/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/backend/ic-xshell.png" />
+							<span>XShell</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Xshell 是一个强大的安全终端模拟软件，它支持SSH1, SSH2, 以及Microsoft Windows 平台的TELNET 协议。Xshell
+						通过互联网到远程主机的安全连接以及它创新性的设计和特色帮助用户在复杂的网络环境中享受他们的工作。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://securecrt.en.softonic.com/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/backend/ic-securecrt.png" />
+							<span>SecureCRT</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span
+						class="item-desc">SecureCRT是一款支持SSH（SSH1和SSH2）的终端仿真程序，简单地说是Windows下登录UNIX或Linux服务器主机的软件。SecureCRT支持SSH，同时支持Telnet和rlogin协议。SecureCRT是一款用于连接运行包括Windows、UNIX和VMS的理想工具。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://www.telerik.com/fiddler">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/backend/ic-fiddler.png" />
+							<span>Fiddler</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span
+						class="item-desc">Fiddler是一个http协议调试代理工具，它能够记录并检查所有你的电脑和互联网之间的http通讯，设置断点，查看所有的“进出”Fiddler的数据（指cookie,html,js,css等文件）。
+						Fiddler 要比其他的网络调试器要更加简单，因为它不仅仅暴露http通讯还提供了一个用户友好的格式。</span>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+	<footer class="footer">
+		<div class="footer-layout">
+			<span><a target="_blank" href="about.html">关于本站</a></span>
+			<span><a target="_blank" href="http://www.beian.miit.gov.cn/">京ICP备20008486号</a></span>
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="../assets/scripts/index.js"></script>
+</body>
+
+</html>

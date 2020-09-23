@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang=zh-CN>
+
+<head>
+	<title>前端开发导航-ZDZN</title>
+	<meta charset=utf-8>
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta content="width=device-width,initial-scale=1,maximum-scale=1">
+	<meta name="baidu-site-verification" content="2nmFOW0dW1" />
+	<meta name="keywords" content="web前端,前端开发,前端框架,前端网,前端资源,前端工程师,webpack,javascript,css,html,jquery,vue,react,angular" />
+	<meta name="description"
+		content="前端开发导航,前端工程师,前端框架,前端资源,javascript常用库,javascript框架,webpack打包工具,jquery,vue,react,angular" />
+	<meta content=jsthon name=author>
+	<link rel="ZDZN icon" type="image/x-icon" href="../assets/img/logo.ico" />
+	<link href="../assets/css/index.css" rel=stylesheet>
+	<script type="text/javascript" src="../assets/scripts/jquery.min.js"></script>
+	<script type="text/javascript" src="../assets/scripts/baidu.js"></script>
+</head>
+
+<body>
+	<div class="head">
+		<div class="head-layout">
+			<img class="logo" src="../assets/img/logo.png" onclick="javascript:location.href='../index.html'" />
+			<div class="tab">
+				<div class="tab-item2"><a target="_blank" href="../index.html">首页</a></div>
+				<div class="tab-item2"><a target="_blank" href="blog.html">博客集</a></div>
+			</div>
+		</div>
+	</div>
+	<div class="search-group">
+		<div class="search-layout">
+			<div class="search-container">
+				<div class="search-tab" id='search-tab'>
+					<span id='baidu'>百度</span>
+					<span id='google'>Google</span>
+					<span id='github'>GitHub</span>
+					<span id='overflow'>StackOverflow</span>
+					<span id='npm'>NPM</span>
+				</div>
+				<div class="search-box"></div>
+				<form class="search-form" id='search-form' target="_blank" action="https://www.baidu.com/s">
+					<input class="search-keyword" id='search-keyword' type=search autocomplete=off autofocus
+						placeholder="百度一下，你就知道" name='word'>
+					<input class="submit" type=submit value="">
+				</form>
+				<div id="dropdown">
+					<ul></ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="container">
+		<div class="common">
+			<div class="common-row">
+				<div class="common-item">
+					<div><img src="../assets/img/ic-github.png" /></div>
+					<a target="_blank" href="https://github.com/">GitHub</a>
+				</div>
+				<div class="common-item">
+					<div><img src="../assets/img/ic-gitlab.png" /></div>
+					<a target="_blank" href="https://gitlab.com/">GitLab</a>
+				</div>
+				<div class="common-item">
+					<div><img src="../assets/img/ic-gitee.png" /></div>
+					<a target="_blank" href="https://gitee.com/">Gitee</a>
+				</div>
+				<div class="common-item">
+					<div><img src="../assets/img/ic-bitbucket.png" /></div>
+					<a target="_blank" href="https://bitbucket.org/product">Bitbucket.org</a>
+				</div>
+				<div class="common-item">
+					<div><img src="../assets/img/ic-stackoverflow.png" /></div>
+					<a target="_blank" href="https://stackoverflow.com/">StackOverflow</a>
+				</div>
+				<div class="common-item">
+					<div><img src="../assets/img/ic-google.png" /></div>
+					<a target="_blank" href="https://www.google.com/search">Google</a>
+				</div>
+				<div class="common-item">
+					<div><img src="../assets/img/ic-baidu.png" /></div>
+					<a target="_blank" href="https://www.baidu.com/s">百度</a>
+				</div>
+			</div>
+			<div class="common-row">
+				<div class="common-item">
+					<div><img src="../assets/img/ic-leetcode.png" /></div>
+					<a target="_blank" href="https://leetcode-cn.com/">LeetCode</a>
+				</div>
+				<div class="common-item">
+					<div><img src="../assets/img/ic-v2ex.png" /></div>
+					<a target="_blank" href="https://www.v2ex.com/">V2EX</a>
+				</div>
+				<div class="common-item">
+					<div><img src="../assets/img/ic-segmentfault.png" /></div>
+					<a target="_blank" href="https://segmentfault.com/">SegmentFault</a>
+				</div>
+				<div class="common-item">
+					<div><img src="../assets/img/ic-csdn.png" /></div>
+					<a target="_blank" href="https://www.csdn.net/">CSDN</a>
+				</div>
+				<div class="common-item">
+					<div><img src="../assets/img/ic-junjin.png" /></div>
+					<a target="_blank" href="https://juejin.im/">掘金</a>
+				</div>
+				<div class="common-item">
+					<div><img src="../assets/img/ic-googlefanyi.png" /></div>
+					<a target="_blank" href="https://translate.google.cn/">Google翻译</a>
+				</div>
+				<div class="common-item">
+					<div><img src="../assets/img/ic-baidufanyi.png" /></div>
+					<a target="_blank" href="https://fanyi.baidu.com/">百度翻译</a>
+				</div>
+			</div>
+		</div>
+		<div class="content-line"></div>
+		<div class="classify">
+			<div class="classify-descRow-space"></div>
+			<div class="classify-descRow">
+				<div class="classify-descItem">
+					<a target="_blank" href="https://developer.mozilla.org/zh-CN">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-mdn.png" />
+							<span>MDN Web文档</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">MDN Web Docs 是一个提供 Web 技术和促进 Web 技术软件的不断发展的学习平台</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://es6.ruanyifeng.com/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-es6.png" />
+							<span>ES6入门教程</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">《ECMAScript 6 入门教程》是一本开源的 JavaScript 语言教程，全面介绍 ECMAScript 6 新引入的语法特性。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://www.tslang.cn/docs/handbook/basic-types.html">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-ts.png" />
+							<span>TypeScript</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">TypeScript是一种由微软开发的开源、跨平台的编程语言。它是JavaScript的超集，最终会被编译为JavaScript代码。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://coffeescript.org/#introduction">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-coffeescript.png" />
+							<span>CoffeeScript</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">CoffeeScript 是一门编译到 JavaScript 的小巧语言. 在 Java 般笨拙的外表下, JavaScript
+						其实有着一颗华丽的心脏. CoffeeScript 尝试用简洁的方式展示 JavaScript 优秀的部分.</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://www.w3school.com.cn/jsref/index.asp">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-w3school.png" />
+							<span>w3school</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc"> WEB 开发者资源，其中包括全面的教程、完善的参考手册以及庞大的代码库。</span>
+				</div>
+			</div>
+			<div class="classify-descRow-line"></div>
+			<div class="classify-descRow">
+				<div class="classify-titleItem">
+					<div class="line-icon"></div>
+					<span>开发框架</span>
+				</div>
+			</div>
+			<div class="classify-descRow">
+				<div class="classify-descItem">
+					<a target="_blank" href="https://cn.vuejs.org/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-vuejs.png" />
+							<span>Vue.js</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Vue.js 是一套构建用户界面的渐进式框架。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://react.docschina.org/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-reactjs.png" />
+							<span>React.js</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">React 起源于 Facebook 的内部项目，是一个用于构建用户界面的 JavaScript 库。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://angular.cn/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-angularjs.png" />
+							<span>Angular.js</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Angular 是一款十分流行且好用的 Web 前端框架，目前由 Google 维护</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://www.preactjs.com.cn/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-preactjs.png" />
+							<span>Preact.js</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">一个只有3kB大小的React替代品，拥有与React相同的 API、组件和虚拟
+						DOM。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://emberjs.com/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-emberjs.png" />
+							<span>Ember.js</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Ember.js是一个开源的JavaScript客户端框架,用于开发Web应用程序并使用MVC(模型 - 视图 - 控制器)架构模式。</span>
+				</div>
+			</div>
+			<div class="classify-descRow-space"></div>
+			<div class="classify-descRow">
+				<div class="classify-descItem">
+					<a target="_blank" href="https://reactnative.cn/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-reactjs.png" />
+							<span>React-Native</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">React Native使你只使用JavaScript也能编写原生移动应用。 它在设计原理上和React一致，通过声明式的组件机制来搭建丰富多彩的用户界面。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://weex.apache.org/zh/guide/introduction.html">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-weex.png" />
+							<span>Weex</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Weex 致力于使开发者能基于通用跨平台的 Web 开发语言和开发经验，来构建 Android、iOS 和 Web 应用。简单来说，在集成了
+						WeexSDK 之后，你可以使用 JavaScript 语言和前端开发经验来开发移动应用。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://uniapp.dcloud.io/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-uni-app.png" />
+							<span>uni-app</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">uni-app 是一个使用 Vue.js
+						开发所有前端应用的框架，开发者编写一套代码，可发布到iOS、Android、H5、以及各种小程序（微信/支付宝/百度/头条/QQ/钉钉/淘宝）、快应用等多个平台。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://ionicframework.com/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-ionic.png" />
+							<span>Ionic</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Ionic 是目前最有潜力的一款 HTML5 手机应用开发框架。通过 SASS 构建应用程序，它 提供了很多 UI 组件来帮助开发者开发强大的应用。
+						它使用 JavaScript MVVM 框架和 AngularJS 来增强应用。提供数据的双向绑定，使用它成为 Web 和移动开发者的共同选择。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://alitajs.com/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-alitajs.png" />
+							<span>Alita.js</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Alita 是一套基于Umi的移动端框架，是面向场景化的开发提效方案。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+			</div>
+			<div class="classify-descRow-space"></div>
+			<div class="classify-descRow">
+				<div class="classify-descItem">
+					<a target="_blank" href="https://www.nuxtjs.cn/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-nuxtjs.png" />
+							<span>Nuxt.js</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Nuxt.js 是一个基于 Vue.js 的通用应用框架。通过对客户端/服务端基础架构的抽象组织，Nuxt.js 主要关注的是应用的
+						UI渲染。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://www.nextjs.cn/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-nextjs.png" />
+							<span>Next.js</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Next.js 是一个轻量级的 React 服务端渲染应用框架。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://ant.design/index-cn">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-antdesign.png" />
+							<span>Ant Design</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">antd 是基于 Ant Design 设计体系的 React UI 组件库，主要用于研发企业级中后台产品。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://www.backbonejs.com.cn/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-backbone.png" />
+							<span>Backbone.js</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span
+						class="item-desc">Backbone.js为复杂WEB应用程序提供模型(models)、集合(collections)、视图(views)的结构。其中模型用于绑定键值数据和自定义事件；集合附有可枚举函数的丰富API；
+						视图可以声明事件处理函数，并通过RESRful JSON接口连接到应用程序。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://knockoutjs.com/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-knockout.png" />
+							<span>Knockout.js</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Knockout是一款很优秀的JavaScript库，它可以帮助你仅使用一个清晰整洁的底层数据模型（data
+						model）即可创建一个富文本且具有良好的显示和编辑功能的用户界面。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+			</div>
+			<div class="classify-descRow-space"></div>
+			<div class="classify-descRow">
+				<div class="classify-descItem">
+					<a target="_blank" href="https://www.polymer-project.org/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-polymer.png" />
+							<span>Polymer.js</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">polymer由谷歌的Palm webOS团队打造，并在2013 Google I/O大会上推出，旨在实现Web
+						Components，用最少的代码，解除框架间的限制的UI 框架。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://www.meteor.com/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-meteor.png" />
+							<span>Meteor</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Meteor是适用于Web，移动和桌面的开源平台，全球超过五百万的开发人员使用它来简化，高效和可扩展的javascript应用程序的发布。。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://vuex.vuejs.org/zh/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-vuejs.png" />
+							<span>Vuex</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Vuex 是一个专为 Vue.js
+						应用程序开发的状态管理模式。它采用集中式存储管理应用的所有组件的状态，并以相应的规则保证状态以一种可预测的方式发生变化</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://www.reduxjs.cn/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-reduxjs.png" />
+							<span>Redux</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Redux 是 JavaScript
+						状态容器，提供可预测化的状态管理、构建一致化的应用，运行于不同的环境（客户端、服务器、原生应用），并且易于测试。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://recoil.js.cn/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-recoiljs.png" />
+							<span>Recoil.js</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Recoil 是一个针对 React 应用程序的状态管理库。 它提供了仅使用 React 难以实现的几种功能，同时与 React
+						的最新功能兼容。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+			</div>
+
+			<div class="classify-descRow-line"></div>
+			<div class="classify-descRow">
+				<div class="classify-titleItem">
+					<div class="line-icon"></div>
+					<span>常用库</span>
+				</div>
+			</div>
+			<div class="classify-descRow">
+				<div class="classify-descItem">
+					<a target="_blank" href="https://www.jquery123.com/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-jquery.png" />
+							<span>JQuery </span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">JQuery 是一个高效、精简并且功能丰富的 JavaScript 工具库。它提供的 API 易于使用且兼容众多浏览器，这让诸如 HTML
+						文档遍历和操作、事件处理、动画和 Ajax
+						操作更加简单。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://www.lodashjs.com/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-lodashjs.png" />
+							<span>Lodash.js</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Lodash是一个具有一致接口、模块化、高性能等特性的JavaScript工具库。比相同功能的Underscore.js
+						使用更广泛。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="http://underscorejs.org/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-underscorejs.png" />
+							<span>Underscore</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Underscore.js是一个 JavaScript 工具库，它提供了一整套函数式编程的实用功能，弥补了 jQuery 没有实现的功能，同时又是
+						Backbone 必不可少的部分。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://www.html.cn/doc/zeptojs_api">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-zeptojs.png" />
+							<span>Zepto.js</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Zepto.js 是一个轻量级、兼容 jQuery 的 JavaScript 工具库。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="http://momentjs.cn/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-momentjs.png" />
+							<span>Moment.js</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Moment.js 是一个 JavaScript 日期处理类库，用于解析、校验、操作以及显示日期。</span>
+				</div>
+			</div>
+			<div class="classify-descRow-space"></div>
+			<div class="classify-descRow">
+				<div class="classify-descItem">
+					<a target="_blank" href="https://vocajs.com/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-voca.png" />
+							<span>Voca</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Voca是一个用于处理字符串的JavaScript库。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://day.js.org/zh-CN/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-day.png" />
+							<span>Day.js</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Day.js 是一个轻量的处理时间和日期的 JavaScript 库，和 Moment.js 的 API 设计保持完全一样。如果您曾经用过
+						Moment.js, 那么您已经知道如何使用 Day.js 。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://mathjs.org/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-mathjs.png" />
+							<span>Mathjs</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span
+						class="item-desc">Math.js是一个用于JavaScript和Node.js的扩展数学库。它具有支持符号计算的灵活表达式解析器，大量内置函数和常量，并提供了一种集成解决方案来处理不同的数据类型，例如数字，大数，复数，分数，单位和矩阵。强大且易于使用。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://chancejs.com/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-chancejs.png" />
+							<span>ChanceJS</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Chance是由随机字符串，数字等组成的极简主义生成器，可帮助减少某些单调性，尤其是在编写自动测试或您需要其他任何随机条件的地方。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://revealjs.com/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-reveal.png" />
+							<span>Reveal.js </span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Reveal.js 是一个展示内容的框架,可以简单的理解为网页版的PPT</span>
+				</div>
+			</div>
+			<div class="classify-descRow-space"></div>
+			<div class="classify-descRow">
+				<div class="classify-descItem">
+					<a target="_blank" href="http://www.webgl3d.cn/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-threejs.png" />
+							<span>Three.js</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Three.js是JavaScript编写的WebGL第三方库。提供了非常多的3D显示功能。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="http://www.createjs.cc/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-createjs.png" />
+							<span>CreateJS 中文网</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">CreateJS是基于HTML5开发的一套模块化的库和工具。
+						基于这些库，可以非常快捷地开发出基于HTML5的游戏、动画和交互应用。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="http://chartjs.cn/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-chartjs.png" />
+							<span>Chart.js</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Chart.js 是为设计和开发人员准备的简单、灵活的 JavaScript 图表工具。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://popper.js.org/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-popperjs.png" />
+							<span>Popper.js</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Popper 作为工具提示（tooltip）和气泡弹框（popover）的定位引擎，不依赖 jQuery，并且体积仅有 3k。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://atomiks.github.io/tippyjs">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-tippyjs.png" />
+							<span>Tippy.js </span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Tippy.js 是一个基于 Popper.js 构建的、高度可定制的工具提示（tooltip）和气泡弹框（popover）库。</span>
+				</div>
+			</div>
+
+			<div class="classify-descRow-line"></div>
+			<div class="classify-descRow">
+				<div class="classify-titleItem">
+					<div class="line-icon"></div>
+					<span>CSS</span>
+				</div>
+			</div>
+			<div class="classify-descRow">
+				<div class="classify-descItem">
+					<a target="_blank" href="https://www.bootcss.com/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-bootstrap.png" />
+							<span>BootStrap</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Bootstrap是一个HTML、CSS和JS框架，用于开发响应式布局、移动设备优先的 WEB 项目。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://www.tailwindcss.cn/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-tailwind.png" />
+							<span>Tailwind</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Tailwind CSS 是一个用于快速UI开发的实用工具集 CSS 框架。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://www.layui.com/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-layui.png" />
+							<span>Layui</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">由职业前端倾情打造，面向全层次的前后端开发者，低门槛开箱即用的前端 UI 解决方案</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="http://element-cn.eleme.io/#/zh-CN">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-elementui.png" />
+							<span>ElementUI</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Element，一套为开发者、设计师和产品经理准备的基于 Vue 2.0 的桌面端组件库</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+
+				<div class="classify-descItem">
+					<a target="_blank" href="http://mint-ui.github.io/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-mintui.png" />
+							<span>Mint UI</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">基于 Vue.js 的移动端组件库 Mint UI 包含丰富的 CSS 和 JS
+						组件，能够满足日常的移动端开发需要。通过它，可以快速构建出风格统一的页面，提升开发效率。</span>
+				</div>
+
+			</div>
+			<div class="classify-descRow-space"></div>
+			<div class="classify-descRow">
+				<div class="classify-descItem">
+					<a target="_blank" href="https://youzan.github.io/vant/#/zh-CN/intro">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-vantui.png" />
+							<span>Vant UI</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">轻量、可靠的移动端 Vue 组件库</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://weui.io/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-weui.png" />
+							<span>WeUI</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">WeUI 是一套同微信原生视觉体验一致的基础样式库，由微信官方设计团队为微信内网页和微信小程序量身设计，令用户的使用感知更加统一。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="http://lesscss.cn/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-less.png" />
+							<span>Less</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">LESS 为 CSS 赋予了动态语言的特性，如变量、继承、运算、函数。LESS 既可以在客户端上运行 (支持 IE
+						6+、Webkit、Firefox)，也可以借助 Node.js 或者 Rhino 在服务端运行。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://www.sasscss.com/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-sass.png" />
+							<span>Sass</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Sass 是一个成熟、稳定、强大的 CSS 扩展语言解析器。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+
+				<div class="classify-descItem">
+					<a target="_blank" href="https://www.cssnano.cn/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-cssnano.png" />
+							<span>Cssnano</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">cssnano 将你的 CSS 文件做多方面的的优化，以确保最终生成的文件对生产环境来说体积是最小的。cssnano 是基于PostCSS
+						构建的。</span>
+				</div>
+
+			</div>
+			<div class="classify-descRow-space"></div>
+			<div class="classify-descRow">
+				<div class="classify-descItem">
+					<a target="_blank" href="https://www.postcss.com.cn/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-postcss.png" />
+							<span>PostCSS</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">PostCSS 是一个用 JavaScript 工具和插件转换 CSS 代码的工具</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://stylus-lang.com/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-stylus.png" />
+							<span>Stylus</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Stylus - 富于表现力、健壮、功能丰富的 CSS 预处理语言。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://www.purgecss.cn/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-purgecss.png" />
+							<span>PurgeCSS</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">PurgeCSS 是一个用来删除未使用的 CSS 代码的工具。可以将它作为你的开发流程中的一个环节。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="http://simpleicons.org/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-simpleIcons.png" />
+							<span>SimpleIcons</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">收集众多网站的 Logo，并提供高质量、不同尺寸的 png 格式图片给广大网友，所有 Icon
+						版权归其所属公司。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://icons.bootcss.com/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-bootstrapIcons.png" />
+							<span>BootStrapIcons</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Bootstrap 专用 SVG 图标集。</span>
+				</div>
+			</div>
+
+			<div class="classify-descRow-line"></div>
+			<div class="classify-descRow">
+				<div class="classify-titleItem">
+					<div class="line-icon"></div>
+					<span>静态站点生成</span>
+				</div>
+			</div>
+			<div class="classify-descRow">
+				<div class="classify-descItem">
+					<a target="_blank" href="https://www.vuepress.cn/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-vuepress.png" />
+							<span>VuePress</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">VuePress 是基于 Vue 前端开发框架的静态站点生成工具。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://www.jekyll.com.cn/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-jekyll.png" />
+							<span>Jekyll</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc" title="Jekyll 是一个静态站点生成工具。它将 Markdown （或者 Textile） 以及 Liquid转化成一个完整的可发布的静态网站。">Jekyll
+						是一个静态站点生成工具。它将 Markdown （或者 Textile） 以及 Liquid
+						转化成一个完整的可发布的静态网站。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://www.docusaurus.cn/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-docusaurus.png" />
+							<span>Docusaurus</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Docusaurus 是一款基于 React 框架构建的易于维护的静态网站创建工具。Docusaurus
+						能够帮你快速建立文档网站、博客、营销页面等。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://www.gridsome.cn/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-gridsome.png" />
+							<span>Gridsome</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Gridsome 是一个免费、开源的 Vue.js 框架，用于构建网站和应用程序，在默认配置下也能有非常快的速度。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://www.gohugo.cn/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-hugo.png" />
+							<span>Hugo</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Hugo 是最流行的开源静态站点生成器之一。凭借其惊人的速度和灵活性，Hugo 让搭建网站再次变得有趣。</span>
+				</div>
+
+			</div>
+			<div class="classify-descRow-space"></div>
+			<div class="classify-descRow">
+				<div class="classify-descItem">
+					<a target="_blank" href="https://www.gatsbyjs.cn/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-gatsbyjs.png" />
+							<span>Gatsby.js</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Gatsby 是一个基于 React 的免费、开源框架，可以帮助开发人员构建快速的网站和应用程序。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://docute.org/zh/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-docute.png" />
+							<span>Docute</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Docute 本质上就是一个 JavaScript 文件，它可以获取 Markdown
+						文件并将它们呈现为单页面应用。它完全由运行时驱动，因此并不涉及服务端组件，这就意味着没有构建过程。你只需创建一个 HTML 文件和一堆 Markdown
+						文档，你的网站就差不多完成了！</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://docsify.js.org/#/zh-cn/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-docsify.png" />
+							<span>Docsify</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">docsify 可以快速帮你生成文档网站。不同于 GitBook、Hexo 的地方是它不会生成静态的 .html
+						文件，所有转换工作都是在运行时。如果你想要开始使用它，只需要创建一个 index.html 就可以开始编写文档并直接部署在 GitHub Pages。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://hexo.io/zh-cn/docs">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-hexo.png" />
+							<span>Hexo</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用
+						Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://metalsmith.io/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-metalsmith.png" />
+							<span>Metalsmith</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Metalsmith是一个非常简单，可插入的静态站点生成器。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+			</div>
+
+			<div class="classify-descRow-line"></div>
+			<div class="classify-descRow">
+				<div class="classify-titleItem">
+					<div class="line-icon"></div>
+					<span>打包工具</span>
+				</div>
+			</div>
+			<div class="classify-descRow">
+				<div class="classify-descItem">
+					<a target="_blank" href="https://www.webpackjs.com/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-webpack.png" />
+							<span>Webpack</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Webpack 是当下最热门的前端资源模块化管理和打包工具。它可以将许多松散的模块按照依赖和规则打包成符合生产环境部署的前端资源。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://www.gruntjs.net/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-grunt.png" />
+							<span>Grunt</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Grunt 是基于 Node.js 的项目构建工具。它可以自动运行你所设定的任务。Grunt 拥有数量庞大的插件，几乎任何你所要做的事情都可以用
+						Grunt 实现。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://www.gulpjs.com.cn/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-gulp.png" />
+							<span>Gulp.js</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Gulp.js - 基于流(stream)的自动化构建工具。Grunt 采用配置文件的方式执行任务，而 Gulp 一切都通过代码实现。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://www.rollupjs.com/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-rollupjs.png" />
+							<span>Rollup</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Rollup 是一个 JavaScript 模块打包工具，可以将小块代码编译成大块复杂的代码。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://www.parceljs.cn/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-parcel.png" />
+							<span>Parcel</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Parcel - 极速、零配置的 web 应用打包工具。</span>
+				</div>
+			</div>
+			<div class="classify-descRow-space"></div>
+			<div class="classify-descRow">
+				<div class="classify-descItem">
+					<a target="_blank" href="https://www.romejs.cn/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-romejs.png" />
+							<span>Rome.js</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Rome 是一个完整的 JavaScript 工具链。它囊括了编译器、语法检查器、格式化程序、打包工具、测试框架等等。Rome 旨在成为处理
+						JavaScript 源代码的综合工具。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="http://browserify.org/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-browserify.png" />
+							<span>Browserify</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">browserify是用于为浏览器编译节点风格的 commonjs模块的工具 。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://brunch.io/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-brunch.png" />
+							<span>Brunch</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">快速的前端Web应用程序构建工具，具有简单的声明性配置和无缝的增量编译功能，可实现快速开发。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://broccoli.build/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-broccoli.png" />
+							<span>Broccoli</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span
+						class="item-desc">Broccoli是一个JavaScript构建工具。构建工具是一种软件，负责将您的应用程序资产（JavaScript，CSS，图像等）组装成某种可分发的形式，通常在浏览器中运行。通过模块化插件体系结构，所有配置均在JavaScript中完成（无混乱/混乱的配置文件）。</span>
+				</div>
+			</div>
+
+			<div class="classify-descRow-line"></div>
+			<div class="classify-descRow">
+				<div class="classify-titleItem">
+					<div class="line-icon"></div>
+					<span>测试框架</span>
+				</div>
+			</div>
+			<div class="classify-descRow">
+				<div class="classify-descItem">
+					<a target="_blank" href="https://jestjs.io/zh-Hans/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-jest.png" />
+							<span>Jest.js</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Jest 是一个令人愉快的 JavaScript 测试框架，专注于简洁明快。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="https://mochajs.cn/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-mocha.png" />
+							<span>Mocha.js</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Mocha 是一个功能丰富的 JavaScript 测试框架，运行在 Node.js 和浏览器中，让异步测试变得简单有趣。</span>
+				</div>
+				<div class="classify-descItem-space"></div>
+				<div class="classify-descItem">
+					<a target="_blank" href="http://www.browsersync.cn/">
+						<div class="classify-descItem-top">
+							<img src="../assets/img/web/ic-browsersync.png" />
+							<span>Browsersync.js</span>
+						</div>
+					</a>
+					<div class="classify-descItemLine"></div>
+					<span class="item-desc">Browsersync 浏览器同步测试工具，很容易与 Web 平台、构建工具和其他 Node.js 项目集成，替代了大量重复测试劳动。</span>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+	<footer class="footer">
+		<div class="footer-layout">
+			<span><a target="_blank" href="about.html">关于本站</a></span>
+			<span><a target="_blank" href="http://www.beian.miit.gov.cn/">京ICP备20008486号</a></span>
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="../assets/scripts/index.js"></script>
+</body>
+
+</html>
